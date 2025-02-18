@@ -1,0 +1,37 @@
+.main-container {
+  margin: 0;
+  background: linear-gradient(to right, #1e3c7260, #2a529830);
+  color: black;
+}
+
+
+ul {
+    list-style-type: disc; /* Puedes cambiar a circle, square, none, etc. */
+    padding-left: 20px; /* Asegura un correcto espaciado */
+    margin: 10px 0;
+}
+
+li {
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
+ul ul {
+    list-style-type: circle; /* Sublistas con otro estilo */
+    padding-left: 20px;
+}
+
+ul li::marker {
+    color: #007bff; /* Color del marcador (bullet) */
+    font-size: 1.2em;
+}
+
+mat-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+mat-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
