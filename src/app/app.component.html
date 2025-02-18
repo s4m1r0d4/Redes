@@ -1,202 +1,266 @@
 <div class="main-container h-max">
-  <p class="text-6xl font-medium text-center pt-5">Redes II</p>
 
-  <p class="text-4xl font-medium text-start pl-6 pt-5 pb-0 mb-0">Unidad 1</p>
-  <div class="grid grid-flow-row grid-cols-3 w-full gap-5 p-6">
+  <p class="text-6xl font-medium text-center pt-5 pb-0 mb-0">Redes II</p>
 
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Funciones del router</mat-card-title>
-      </mat-card-header>
+  <mat-tab-group mat-stretch-tabs="true" mat-align-tabs="w-full h-max">
+    <mat-tab label="Unidad 1">
+      <div class="grid grid-flow-row grid-cols-2 lg:grid-cols-3 w-full gap-5 p-6">
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Funciones del router</mat-card-title>
+          </mat-card-header>
 
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        Un router es un dispositivo de red que dirige el tráfico de datos entre diferentes redes. Sus principales
-        funciones incluyen:
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Un router es un dispositivo de red que dirige el tráfico de datos entre diferentes redes. Sus principales
+            funciones incluyen:
 
-        <ul class="gap-y-2">
-          <li> Encaminamiento de paquetes: Determina la mejor ruta para enviar los datos a su destino. </li>
-          <li> Segmentación de red: Separa las redes para mejorar la seguridad y el rendimiento. </li>
-          <li> Asignación de direcciones IP: Puede actuar como un servidor DHCP para asignar direcciones IP a los
-            dispositivos conectados. </li>
-          <li> Seguridad y filtrado: Incorpora funciones como firewall, filtrado de direcciones MAC y control parental.
-          </li>
-          <li> Conversión de direcciones de red (NAT): Permite que varios dispositivos compartan una única dirección IP
-            pública. </li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Conectar los dispositivos</mat-card-title>
-      </mat-card-header>
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        <ul>
-          <li>Conexión por cable Ethernet: Se usa para una conexión más estable y rápida, ideal para computadoras de
-            escritorio, consolas de videojuegos y dispositivos de streaming.</li>
-          <li>Conexión por cable cruzado: Se usa para una conexión más estable y rápida, ideal para computadoras de
-            escritorio, consolas de videojuegos y dispositivos de streaming.</li>
-          <li>Conexión por cable recto: Se usa para una conexión más estable y rápida, ideal para computadoras de
-            escritorio, consolas de videojuegos y dispositivos de streaming.</li>
-          <li>Conexión Wi-Fi: Permite la conexión inalámbrica de laptops, teléfonos, tabletas y otros dispositivos
-            compatibles.</li>
-        </ul>
-
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Configuración básica del router</mat-card-title>
-      </mat-card-header>
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        Los pasos básicos para configurar un router incluyen:
-        <ul>
-          <li>Acceso a la interfaz de administración: Normalmente se hace a través de un navegador web ingresando la
-            dirección IP del router (como 192.168.1.1).</li>
-          <li>Cambio de credenciales predeterminadas: Es recomendable modificar el usuario y la contraseña por
-            seguridad.</li>
-          <li>Configuración de la red Wi-Fi: Definir un nombre de red (SSID) y una contraseña segura (preferiblemente
-            WPA2 o WPA3).</li>
-          <li>Asignación de direcciones IP: Configurar el DHCP si se desea que el router asigne direcciones IP
-            automáticamente.</li>
-          <li>Ajustes de seguridad: Activar el firewall, deshabilitar WPS si no es necesario y filtrar direcciones MAC
-            si se requiere control de acceso.</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Verificación de la conectividad de redes conectadas directamente</mat-card-title>
-      </mat-card-header>
-
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        Para comprobar si la red está funcionando correctamente, se pueden realizar los siguientes pasos:
-
-        <ul>
-          <li>Revisión de indicadores LED del router: Verificar que las luces de conexión Ethernet, Wi-Fi e Internet
-            estén activas.</li>
-          <li>Comprobación de conectividad con comandos: Usar comandos como ping (ej. ping 8.8.8.8) o tracert en
-            Windows/Linux para verificar la conexión con otros dispositivos o con Internet.</li>
-          <li>Acceso a la configuración del router: Revisar la lista de dispositivos conectados y verificar que tengan
-            direcciones IP asignadas.</li>
-          <li>Pruebas de velocidad: Utilizar herramientas como Speedtest para medir la velocidad de conexión.</li>
-          <li>Prueba de conexión en diferentes dispositivos: Si un solo dispositivo no tiene acceso, podría haber un
-            problema de configuración en ese equipo específico.</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Switching de paquetes entre redes</mat-card-title>
-      </mat-card-header>
-
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        El switching de paquetes se refiere al proceso de transferencia de paquetes desde una red de origen a una red de
-        destino. Existen varios métodos de switching:
-        <ul>
-          <li>Switching basado en procesos: Cada paquete es examinado y ruteado individualmente.</li>
-          <li>Switching rápido (Fast Switching): Se almacena en caché la información de rutas para mejorar la
-            eficiencia.</li>
-          <li>Switching CEF (Cisco Express Forwarding): Utiliza una tabla preconstruida para tomar decisiones de
-            forwarding de manera más eficiente.</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Determinación de ruta</mat-card-title>
-      </mat-card-header>
-
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        Los routers eligen la mejor ruta basada en diferentes métricas y algoritmos, incluyendo:
-
-        <ul>
-          <li>Métricas: Ancho de banda, retraso, carga, confiabilidad y número de saltos.</li>
-          <li>Algoritmos de routing:
             <ul>
-              <li>Vector distancia (RIP, IGRP): Basados en la cantidad de saltos.</li>
-              <li>Estado de enlace (OSPF, IS-IS): Basados en el estado de los enlaces y cálculo de la mejor ruta con
-                Dijkstra.</li>
-              <li>Híbridos (EIGRP): Combinan características de ambos tipos.</li>
+              <li>Una red remota es aquella que no está directamente conectada a un router.</li>
+              <li>Para alcanzar una red remota, el router debe tener una ruta que especifique cómo llegar a ella.</li>
+              <li>En el routing estático, el administrador configura rutas específicas para alcanzar redes remotas,
+                utilizando direcciones IP y métricas predefinidas.</li>
             </ul>
-          </li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
+          </mat-card-content>
+        </mat-card>
 
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Análisis de la tabla de routing</mat-card-title>
-      </mat-card-header>
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Configuración básica del router</mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Los pasos básicos para configurar un router incluyen:
+            <ul>
+              <li>Acceso a la interfaz de administración: Normalmente se hace a través de un navegador web ingresando la
+                dirección IP del router (como 192.168.1.1).</li>
+              <li>Cambio de credenciales predeterminadas: Es recomendable modificar el usuario y la contraseña por
+                seguridad.</li>
+              <li>Configuración de la red Wi-Fi: Definir un nombre de red (SSID) y una contraseña segura
+                (preferiblemente
+                WPA2 o WPA3).</li>
+              <li>Asignación de direcciones IP: Configurar el DHCP si se desea que el router asigne direcciones IP
+                automáticamente.</li>
+              <li>Ajustes de seguridad: Activar el firewall, deshabilitar WPS si no es necesario y filtrar direcciones
+                MAC
+                si se requiere control de acceso.</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
 
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        La tabla de routing es una base de datos que almacena rutas conocidas y sus métricas. Se compone de:
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Verificación de la conectividad de redes conectadas directamente</mat-card-title>
+          </mat-card-header>
 
-        <ul>
-          <li>Red de destino: Identifica la red a la que pertenece una dirección IP.</li>
-          <li>Máscara de subred: Determina la porción de red y host en una dirección IP.</li>
-          <li>Puerta de enlace: Dirección del siguiente salto hacia el destino.</li>
-          <li>Interfaz de salida: La interfaz por la que se enviará el paquete.</li>
-          <li>Métrica: Indica la preferencia o costo de la ruta.</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Para comprobar si la red está funcionando correctamente, se pueden realizar los siguientes pasos:
 
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Rutas conectadas directamente</mat-card-title>
-      </mat-card-header>
+            <ul>
+              <li>Revisión de indicadores LED del router: Verificar que las luces de conexión Ethernet, Wi-Fi e Internet
+                estén activas.</li>
+              <li>Comprobación de conectividad con comandos: Usar comandos como ping (ej. ping 8.8.8.8) o tracert en
+                Windows/Linux para verificar la conexión con otros dispositivos o con Internet.</li>
+              <li>Acceso a la configuración del router: Revisar la lista de dispositivos conectados y verificar que
+                tengan
+                direcciones IP asignadas.</li>
+              <li>Pruebas de velocidad: Utilizar herramientas como Speedtest para medir la velocidad de conexión.</li>
+              <li>Prueba de conexión en diferentes dispositivos: Si un solo dispositivo no tiene acceso, podría haber un
+                problema de configuración en ese equipo específico.</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
 
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        Son aquellas rutas que el router conoce porque tienen una interfaz
-        configurada dentro de esa red. Se identifican en la tabla de routing con una 'C' (Connected).
-      </mat-card-content>
-    </mat-card>
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Switching de paquetes entre redes</mat-card-title>
+          </mat-card-header>
 
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title> Rutas descubiertas estáticamente</mat-card-title>
-      </mat-card-header>
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            El switching de paquetes se refiere al proceso de transferencia de paquetes desde una red de origen a una
+            red de
+            destino. Existen varios métodos de switching:
+            <ul>
+              <li>Switching basado en procesos: Cada paquete es examinado y ruteado individualmente.</li>
+              <li>Switching rápido (Fast Switching): Se almacena en caché la información de rutas para mejorar la
+                eficiencia.</li>
+              <li>Switching CEF (Cisco Express Forwarding): Utiliza una tabla preconstruida para tomar decisiones de
+                forwarding de manera más eficiente.</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
 
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        Las rutas estáticas son configuradas manualmente por el administrador de red y permanecen fijas en la tabla de routing.
-        Se identifican con una 'S' (Static) y pueden ser útiles en redes pequeñas o para definir rutas de respaldo.
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Determinación de ruta</mat-card-title>
+          </mat-card-header>
 
-        Ejemplo de configuración de una ruta estática en Cisco:
-        <br />
-        <span> Router(config)# ip route 192.168.2.0 255.255.255.0 192.168.1.1 </span>
-      </mat-card-content>
-    </mat-card>
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Los routers eligen la mejor ruta basada en diferentes métricas y algoritmos, incluyendo:
 
-    <mat-card appearance="outlined" class="p-3">
-      <mat-card-header>
-        <mat-card-title>Protocolos de routing dinámico</mat-card-title>
-      </mat-card-header>
+            <ul>
+              <li>Métricas: Ancho de banda, retraso, carga, confiabilidad y número de saltos.</li>
+              <li>Algoritmos de routing:
+                <ul>
+                  <li>Vector distancia (RIP, IGRP): Basados en la cantidad de saltos.</li>
+                  <li>Estado de enlace (OSPF, IS-IS): Basados en el estado de los enlaces y cálculo de la mejor ruta con
+                    Dijkstra.</li>
+                  <li>Híbridos (EIGRP): Combinan características de ambos tipos.</li>
+                </ul>
+              </li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
 
-      <mat-card-content class="mt-4 mx-2 mb-2 text-start">
-        Los protocolos de routing dinámico permiten a los routers intercambiar información de rutas automáticamente. Se clasifican en:
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Análisis de la tabla de routing</mat-card-title>
+          </mat-card-header>
 
-        <ul>
-          <li>RIP (Routing Information Protocol): Basado en vector distancia, usa el número de saltos como métrica.</li>
-          <li>OSPF (Open Shortest Path First): Basado en estado de enlace, calcula la mejor ruta mediante Dijkstra.</li>
-          <li>EIGRP (Enhanced Interior Gateway Routing Protocol): Protocolo híbrido, más eficiente que RIP y con menor consumo de recursos que OSPF.</li>
-          <li>BGP (Border Gateway Protocol): Utilizado en redes de gran escala, como Internet.</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            La tabla de routing es una base de datos que almacena rutas conocidas y sus métricas. Se compone de:
 
-  </div>
+            <ul>
+              <li>Red de destino: Identifica la red a la que pertenece una dirección IP.</li>
+              <li>Máscara de subred: Determina la porción de red y host en una dirección IP.</li>
+              <li>Puerta de enlace: Dirección del siguiente salto hacia el destino.</li>
+              <li>Interfaz de salida: La interfaz por la que se enviará el paquete.</li>
+              <li>Métrica: Indica la preferencia o costo de la ruta.</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
 
-  <p class="text-2xl font-medium text-start pl-6 pt-5 pb-0 mb-1">Unidad 2</p>
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Rutas conectadas directamente</mat-card-title>
+          </mat-card-header>
 
-  <div class="grid grid-flow-row grid-cols-3 w-full gap-5 p-6">
-  </div>
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Son aquellas rutas que el router conoce porque tienen una interfaz
+            configurada dentro de esa red. Se identifican en la tabla de routing con una 'C' (Connected).
+          </mat-card-content>
+        </mat-card>
 
-  <p class="text-2xl font-medium text-start pl-6 pt-5 pb-0 mb-1">Unidad 3</p>
-  <div class="grid grid-flow-row grid-cols-3 w-full gap-2 m-4">
-  </div>
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title> Rutas descubiertas estáticamente</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Las rutas estáticas son configuradas manualmente por el administrador de red y permanecen fijas en la tabla
+            de routing.
+            Se identifican con una 'S' (Static) y pueden ser útiles en redes pequeñas o para definir rutas de respaldo.
+
+            Ejemplo de configuración de una ruta estática en Cisco:
+            <br />
+            <span> Router(config)# ip route 192.168.2.0 255.255.255.0 192.168.1.1 </span>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Protocolos de routing dinámico</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Los protocolos de routing dinámico permiten a los routers intercambiar información de rutas automáticamente.
+            Se clasifican en:
+
+            <ul>
+              <li>RIP (Routing Information Protocol): Basado en vector distancia, usa el número de saltos como métrica.
+              </li>
+              <li>OSPF (Open Shortest Path First): Basado en estado de enlace, calcula la mejor ruta mediante Dijkstra.
+              </li>
+              <li>EIGRP (Enhanced Interior Gateway Routing Protocol): Protocolo híbrido, más eficiente que RIP y con
+                menor consumo de recursos que OSPF.</li>
+              <li>BGP (Border Gateway Protocol): Utilizado en redes de gran escala, como Internet.</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Unidad 2">
+      <div class="grid grid-flow-row grid-cols-3 w-full gap-5 p-6">
+
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Routing Estático</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            El routing estático es un método de enrutamiento en el que un administrador configura manualmente las rutas
+            en un
+            router. A diferencia del enrutamiento dinámico, las rutas estáticas no cambian automáticamente en respuesta
+            a cambios en
+            la red.
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Alcance de las Redes Remotas</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            <ul>
+              <li>Una red remota es aquella que no está directamente conectada a un router.</li>
+              <li>Para alcanzar una red remota, el router debe tener una ruta que especifique cómo llegar a ella.</li>
+              <li>En el routing estático, el administrador configura rutas específicas para alcanzar redes remotas,
+                utilizando direcciones IP y métricas predefinidas.</li>
+            </ul>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Utilizar el Routing Estático</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Para implementar el routing estático se deben seguir los siguientes pasos:
+
+            <ul>
+              <li>Determinar la dirección de la red de destino y su máscara de subred.</li>
+              <li>Definir la dirección IP de la interfaz de salida o el siguiente salto.</li>
+              <li>Configurar la ruta estática en el router.</li>
+              <li>Verificar la conectividad y la correcta configuración de la ruta.</li>
+            </ul>
+
+            Comando básico en Cisco IOS:
+            <br>
+            <span>Router(config)# ip route [red_destino] [máscara] [siguiente_salto o interfaz]</span>
+
+            Ejemplo:
+            <br>
+            <span>Router(config)# ip route 192.168.2.0 255.255.255.0 192.168.1.2</span>
+          </mat-card-content>
+        </mat-card>
+
+        <mat-card appearance="outlined" class="p-3">
+          <mat-card-header>
+            <mat-card-title>Usar Rutas Estáticas</mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content class="mt-4 mx-2 mb-2 text-start">
+            Las rutas estáticas son utilizadas en diversos escenarios:
+
+            <ul>
+              <li>Cuando se requiere una configuración estable sin cambios dinámicos.</li>
+              <li>Para redes pequeñas donde el mantenimiento de rutas es fácil.</li>
+              <li>Como respaldo de protocolos de enrutamiento dinámicos.</li>
+              <li>Para mejorar la seguridad, ya que evita la publicidad de rutas automáticas.</li>
+            </ul>
+
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Unidad 2">
+      <p class="text-2xl font-medium text-start pl-6 pt-5 pb-0 mb-1">Unidad 3</p>
+      <div class="grid grid-flow-row grid-cols-3 w-full gap-2 m-4">
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
 </div>

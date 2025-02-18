@@ -6,6 +6,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { FormControl } from '@angular/forms';
 import { map, Observable, startWith } from 'rxjs';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @Component({
@@ -16,6 +17,7 @@ import { map, Observable, startWith } from 'rxjs';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    MatTabsModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
